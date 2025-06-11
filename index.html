@@ -12,6 +12,8 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./tablet.css">
+  <link rel="stylesheet" href="./mobile.css">
 </head>
 
 <body class="inter">
@@ -21,12 +23,15 @@
     <nav class="inter">
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Popular</a></li>
+        <li><a href="#new">New</a></li>
+        <li><a href="#footer">Popular</a></li>
         <li><a href="#">Trending</a></li>
         <li><a href="#">Categories</a></li>
       </ul>
     </nav>
+    <button>
+      <span></span><span></span><span></span>
+    </button>
   </header>
 
   <main class="container">
@@ -34,11 +39,12 @@
       <article class="bright">
         <div class="bg"></div>
         <div class="text">
-          <h1 class="inter">The Bright Future of Web 3.0?</h1>
+          <h1 class="inter">The Bright Future of Web&nbsp;3.0?</h1>
 
           <div>
             <p>
-              We dive into the next evolution of the web that claims to put the power of the platforms back into&nbsp;the
+              We dive into the next evolution of the web that claims to put the power of the platforms back
+              into&nbsp;the
               hands
               of the people.
               But is it really fulfilling its promise?
@@ -49,7 +55,7 @@
         </div>
       </article>
 
-      <article class="new">
+      <article class="new" id="new">
         <h2>New</h2>
 
         <article>
@@ -70,7 +76,7 @@
     </section>
   </main>
 
-  <footer class="container">
+  <footer class="container" id="footer">
     <div>
       <img src="./assets/images/image-retro-pcs.jpg" alt="">
       <div class="fbx">
@@ -98,6 +104,23 @@
       </div>
     </div>
   </footer>
+  <script>
+    const nav = document.querySelector('nav')
+    const button = document.querySelector('header button')
+    console.dir(nav);
+    console.dir(button);
+
+    button.addEventListener('click', function () {
+      console.log('на мене клікнули');
+      document.body.style.overflow = 'hidden'
+      if (nav.style.display === 'block') {
+        nav.style.display = 'none'
+      } else {
+        nav.style.display = 'block'
+      }
+
+    })
+  </script>
 
 </body>
 

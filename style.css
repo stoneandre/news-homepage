@@ -79,6 +79,9 @@ header {
             }
         }
     }
+    button{
+        display: none;
+    }
 }
 
 main {
@@ -93,7 +96,7 @@ main {
 
             .bg {
                 background-image: url(./assets/images/image-web-3-desktop.jpg);
-                width: 730px;
+                max-width: 730px;
                 height: 300px;
                 background-repeat: no-repeat;
                 background-position: center top 0;
