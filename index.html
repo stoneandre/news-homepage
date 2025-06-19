@@ -111,12 +111,13 @@
     console.dir(button);
 
     button.addEventListener('click', function () {
-      console.log('на мене клікнули');
-      document.body.style.overflow = 'hidden'
+      // console.log('на мене клікнули');
       if (nav.style.display === 'block') {
         nav.style.display = 'none'
+        document.body.style.overflow = ''
       } else {
         nav.style.display = 'block'
+        document.body.style.overflow = 'hidden'
       }
 
     })
