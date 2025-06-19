@@ -28,7 +28,7 @@
 
 ### Скріншот
 
-![](./design/desktop-preview.jpg)
+![](./desktop-preview.jpg)
 
 ### Посилання
 
